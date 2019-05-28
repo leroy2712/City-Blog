@@ -1,12 +1,19 @@
-<!DOCTYPE html>
-<html>
-    <head></head>
-    <body>
+{% extends "articles/base.html" %}
+{% block content %}
+
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
         {% for article in articles %}
-            <h2>{{ article.title }}</h2>
-            <p>Published on {{ article.date_published }} by {{ article.author }} </p>
-            <img src="{{ article.picture }}" alt="{{ article.title }}">
-            <p>{{ article.text }}</p>
+        <h2>{{ article.title }}</h2>
+        <p>Published on {{ article.date_published }} by {{ article.author }} </p>
+        <img src="{{ article.picture }}" alt="{{ article.title }}" class="img-thumbnail">
+        <p>{{ article.text }}</p>
+        <br>
+        <hr>
         {% endfor %}
-    </body>
-</html>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+
+{% endblock content %}
