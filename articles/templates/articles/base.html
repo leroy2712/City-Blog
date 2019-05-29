@@ -4,12 +4,12 @@
 
 <head>
     <title>Deutschland Städte</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'articles/main.css' %}">
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-static-top">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="/">Germany City Blog</a>
@@ -17,7 +17,8 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
             </ul>
-            <a class="btn btn-danger navbar-btn" href="{% url 'article_new' %}"><span class="glyphicon glyphicon-plus"></span>&nbsp; Add New City Blog Post</a>
+            <a class="btn btn-danger navbar-btn" href="{% url 'article_new' %}"><span
+                    class="glyphicon glyphicon-plus"></span>&nbsp; Add New City Blog Post</a>
         </div>
     </nav>
 
@@ -27,7 +28,8 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

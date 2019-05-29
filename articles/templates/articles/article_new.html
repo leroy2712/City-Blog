@@ -1,13 +1,14 @@
 {% extends "articles/base.html" %}
+{% load crispy_forms_tags %}
 {% block content %}
 
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <h2>New post</h2>
+        <h2 class="text-center" style="padding-top: 50px;">Review New City</h2>
         <form method="POST" class="post-form">{% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="save btn btn-default">Save</button>
+            {{ form|crispy }}
+            <button type="submit" class="save btn btn-danger">Save</button>
         </form>
     </div>
     <div class="col-sm-3"></div>
